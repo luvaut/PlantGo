@@ -7,25 +7,55 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E810E3C82503BFC20023130D /* DatabaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E810E3C72503BFC20023130D /* DatabaseProtocol.swift */; };
+		E810E3D52503E1BF0023130D /* Plant+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E810E3D12503E1BF0023130D /* Plant+CoreDataClass.swift */; };
+		E810E3D62503E1BF0023130D /* Plant+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E810E3D22503E1BF0023130D /* Plant+CoreDataProperties.swift */; };
+		E810E3D72503E1BF0023130D /* Exhibition+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E810E3D32503E1BF0023130D /* Exhibition+CoreDataClass.swift */; };
+		E810E3D82503E1BF0023130D /* Exhibition+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E810E3D42503E1BF0023130D /* Exhibition+CoreDataProperties.swift */; };
+		E810E3DA25051AA40023130D /* CoreDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E810E3D925051AA40023130D /* CoreDataController.swift */; };
+		E87454F325120F8500223D6F /* ExhibitionDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87454F225120F8500223D6F /* ExhibitionDetailTableViewController.swift */; };
 		E887697B250381300010049E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E887697A250381300010049E /* AppDelegate.swift */; };
 		E887697D250381300010049E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E887697C250381300010049E /* SceneDelegate.swift */; };
-		E887697F250381300010049E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E887697E250381300010049E /* ViewController.swift */; };
 		E8876982250381300010049E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8876980250381300010049E /* Main.storyboard */; };
 		E8876985250381300010049E /* PlantGo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E8876983250381300010049E /* PlantGo.xcdatamodeld */; };
 		E8876987250381310010049E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8876986250381310010049E /* Assets.xcassets */; };
 		E887698A250381310010049E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8876988250381310010049E /* LaunchScreen.storyboard */; };
+		E8876992250382290010049E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8876991250382290010049E /* HomeViewController.swift */; };
+		E8876994250382540010049E /* AllExhibitionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8876993250382540010049E /* AllExhibitionsTableViewController.swift */; };
+		E8876998250382C30010049E /* PlantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8876997250382C30010049E /* PlantDetailViewController.swift */; };
+		E887699A250383650010049E /* CreateExhibitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8876999250383650010049E /* CreateExhibitionViewController.swift */; };
+		E887699C250383E40010049E /* AddPlantTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E887699B250383E40010049E /* AddPlantTableViewController.swift */; };
+		E88769B725038AA30010049E /* ExhibitionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88769B625038AA30010049E /* ExhibitionTableViewCell.swift */; };
+		E88769B9250393450010049E /* ExhibitionAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88769B8250393450010049E /* ExhibitionAnnotation.swift */; };
+		E8999F7025136BCB00A22F77 /* VolumnData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8999F6F25136BCB00A22F77 /* VolumnData.swift */; };
+		E8999F7325136BDD00A22F77 /* PlantData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8999F7225136BDD00A22F77 /* PlantData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E810E3C72503BFC20023130D /* DatabaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseProtocol.swift; sourceTree = "<group>"; };
+		E810E3D12503E1BF0023130D /* Plant+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Plant+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		E810E3D22503E1BF0023130D /* Plant+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Plant+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		E810E3D32503E1BF0023130D /* Exhibition+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Exhibition+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		E810E3D42503E1BF0023130D /* Exhibition+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Exhibition+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		E810E3D925051AA40023130D /* CoreDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataController.swift; sourceTree = "<group>"; };
+		E87454F225120F8500223D6F /* ExhibitionDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExhibitionDetailTableViewController.swift; sourceTree = "<group>"; };
 		E8876977250381300010049E /* PlantGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlantGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E887697A250381300010049E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E887697C250381300010049E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E887697E250381300010049E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E8876981250381300010049E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E8876984250381300010049E /* PlantGo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PlantGo.xcdatamodel; sourceTree = "<group>"; };
 		E8876986250381310010049E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8876989250381310010049E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E887698B250381310010049E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8876991250382290010049E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E8876993250382540010049E /* AllExhibitionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllExhibitionsTableViewController.swift; sourceTree = "<group>"; };
+		E8876997250382C30010049E /* PlantDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailViewController.swift; sourceTree = "<group>"; };
+		E8876999250383650010049E /* CreateExhibitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateExhibitionViewController.swift; sourceTree = "<group>"; };
+		E887699B250383E40010049E /* AddPlantTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlantTableViewController.swift; sourceTree = "<group>"; };
+		E88769B625038AA30010049E /* ExhibitionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExhibitionTableViewCell.swift; sourceTree = "<group>"; };
+		E88769B8250393450010049E /* ExhibitionAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExhibitionAnnotation.swift; sourceTree = "<group>"; };
+		E8999F6F25136BCB00A22F77 /* VolumnData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumnData.swift; sourceTree = "<group>"; };
+		E8999F7225136BDD00A22F77 /* PlantData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +69,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E810E3C62503BF870023130D /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				E810E3C72503BFC20023130D /* DatabaseProtocol.swift */,
+				E810E3D925051AA40023130D /* CoreDataController.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
 		E887696E250381300010049E = {
 			isa = PBXGroup;
 			children = (
@@ -58,16 +97,38 @@
 		E8876979250381300010049E /* PlantGo */ = {
 			isa = PBXGroup;
 			children = (
+				E810E3C62503BF870023130D /* Database */,
+				E88769A5250388C20010049E /* DataModel */,
 				E887697A250381300010049E /* AppDelegate.swift */,
 				E887697C250381300010049E /* SceneDelegate.swift */,
-				E887697E250381300010049E /* ViewController.swift */,
 				E8876980250381300010049E /* Main.storyboard */,
 				E8876986250381310010049E /* Assets.xcassets */,
 				E8876988250381310010049E /* LaunchScreen.storyboard */,
 				E887698B250381310010049E /* Info.plist */,
 				E8876983250381300010049E /* PlantGo.xcdatamodeld */,
+				E8876991250382290010049E /* HomeViewController.swift */,
+				E8876993250382540010049E /* AllExhibitionsTableViewController.swift */,
+				E8876997250382C30010049E /* PlantDetailViewController.swift */,
+				E8876999250383650010049E /* CreateExhibitionViewController.swift */,
+				E887699B250383E40010049E /* AddPlantTableViewController.swift */,
+				E88769B625038AA30010049E /* ExhibitionTableViewCell.swift */,
+				E88769B8250393450010049E /* ExhibitionAnnotation.swift */,
+				E87454F225120F8500223D6F /* ExhibitionDetailTableViewController.swift */,
 			);
 			path = PlantGo;
+			sourceTree = "<group>";
+		};
+		E88769A5250388C20010049E /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				E810E3D12503E1BF0023130D /* Plant+CoreDataClass.swift */,
+				E810E3D22503E1BF0023130D /* Plant+CoreDataProperties.swift */,
+				E810E3D32503E1BF0023130D /* Exhibition+CoreDataClass.swift */,
+				E810E3D42503E1BF0023130D /* Exhibition+CoreDataProperties.swift */,
+				E8999F6F25136BCB00A22F77 /* VolumnData.swift */,
+				E8999F7225136BDD00A22F77 /* PlantData.swift */,
+			);
+			path = DataModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,7 +158,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1160;
-				LastUpgradeCheck = 1160;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = LUVAUT;
 				TargetAttributes = {
 					E8876976250381300010049E = {
@@ -141,10 +202,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E887697F250381300010049E /* ViewController.swift in Sources */,
+				E8876994250382540010049E /* AllExhibitionsTableViewController.swift in Sources */,
+				E887699C250383E40010049E /* AddPlantTableViewController.swift in Sources */,
+				E88769B9250393450010049E /* ExhibitionAnnotation.swift in Sources */,
 				E8876985250381300010049E /* PlantGo.xcdatamodeld in Sources */,
+				E810E3DA25051AA40023130D /* CoreDataController.swift in Sources */,
 				E887697B250381300010049E /* AppDelegate.swift in Sources */,
 				E887697D250381300010049E /* SceneDelegate.swift in Sources */,
+				E88769B725038AA30010049E /* ExhibitionTableViewCell.swift in Sources */,
+				E87454F325120F8500223D6F /* ExhibitionDetailTableViewController.swift in Sources */,
+				E810E3C82503BFC20023130D /* DatabaseProtocol.swift in Sources */,
+				E810E3D72503E1BF0023130D /* Exhibition+CoreDataClass.swift in Sources */,
+				E887699A250383650010049E /* CreateExhibitionViewController.swift in Sources */,
+				E810E3D52503E1BF0023130D /* Plant+CoreDataClass.swift in Sources */,
+				E810E3D82503E1BF0023130D /* Exhibition+CoreDataProperties.swift in Sources */,
+				E8876992250382290010049E /* HomeViewController.swift in Sources */,
+				E8876998250382C30010049E /* PlantDetailViewController.swift in Sources */,
+				E8999F7025136BCB00A22F77 /* VolumnData.swift in Sources */,
+				E810E3D62503E1BF0023130D /* Plant+CoreDataProperties.swift in Sources */,
+				E8999F7325136BDD00A22F77 /* PlantData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,6 +272,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -256,6 +333,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
