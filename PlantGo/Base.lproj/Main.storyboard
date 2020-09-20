@@ -367,6 +367,16 @@
                                     <action selector="UseCurrentLocation:" destination="th0-At-6M1" eventType="touchUpInside" id="YQy-1E-nuc"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQt-ch-8oJ">
+                                <rect key="frame" x="16" y="367" width="343" height="223.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="LQt-ch-8oJ" secondAttribute="height" multiplier="23:15" id="Ix1-sN-gJL"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="addImg"/>
+                                <connections>
+                                    <action selector="addImage:" destination="th0-At-6M1" eventType="touchUpInside" id="he8-af-rMs"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qiL-x4-5J1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -375,6 +385,7 @@
                             <constraint firstItem="WYP-9A-8ey" firstAttribute="leading" secondItem="qiL-x4-5J1" secondAttribute="leading" constant="16" id="1mu-wM-k8J"/>
                             <constraint firstItem="PkW-oe-BVa" firstAttribute="leading" secondItem="dDe-o3-Fcz" secondAttribute="trailing" constant="16" id="3ZJ-7q-4Tq"/>
                             <constraint firstItem="eWN-zJ-hda" firstAttribute="top" secondItem="Qhe-pZ-gTc" secondAttribute="bottom" constant="16" id="4H7-Gt-4gW"/>
+                            <constraint firstItem="qiL-x4-5J1" firstAttribute="trailing" secondItem="LQt-ch-8oJ" secondAttribute="trailing" constant="16" id="61n-XT-QaC"/>
                             <constraint firstItem="qiL-x4-5J1" firstAttribute="trailing" secondItem="WYP-9A-8ey" secondAttribute="trailing" constant="16" id="C2E-DY-aZm"/>
                             <constraint firstItem="dDe-o3-Fcz" firstAttribute="leading" secondItem="qiL-x4-5J1" secondAttribute="leading" constant="16" id="DpM-XO-eaB"/>
                             <constraint firstItem="Yo0-6m-93P" firstAttribute="top" secondItem="qiL-x4-5J1" secondAttribute="top" constant="16" id="EGh-qs-c5h"/>
@@ -387,6 +398,7 @@
                             <constraint firstItem="Yo0-6m-93P" firstAttribute="leading" secondItem="qiL-x4-5J1" secondAttribute="leading" constant="16" id="Ox2-er-ZT4"/>
                             <constraint firstItem="rtC-vz-tV9" firstAttribute="leading" secondItem="eWN-zJ-hda" secondAttribute="trailing" constant="16" id="Qxc-9y-Kj3"/>
                             <constraint firstItem="PkW-oe-BVa" firstAttribute="width" secondItem="eWN-zJ-hda" secondAttribute="width" id="WQ4-gT-cDk"/>
+                            <constraint firstItem="LQt-ch-8oJ" firstAttribute="leading" secondItem="qiL-x4-5J1" secondAttribute="leading" constant="16" id="Z0E-rt-0TE"/>
                             <constraint firstItem="qiL-x4-5J1" firstAttribute="trailing" secondItem="F2U-OH-g3C" secondAttribute="trailing" constant="16" id="Zij-6T-OYx"/>
                             <constraint firstItem="j8N-Jx-VTY" firstAttribute="top" secondItem="dDe-o3-Fcz" secondAttribute="bottom" constant="16" id="e7J-hV-6pZ"/>
                             <constraint firstItem="qiL-x4-5J1" firstAttribute="trailing" secondItem="Yo0-6m-93P" secondAttribute="trailing" constant="16" id="eng-YW-qpF"/>
@@ -398,6 +410,7 @@
                             <constraint firstItem="Qhe-pZ-gTc" firstAttribute="top" secondItem="WYP-9A-8ey" secondAttribute="bottom" constant="16" id="p6k-kP-JnC"/>
                             <constraint firstItem="eWN-zJ-hda" firstAttribute="leading" secondItem="qiL-x4-5J1" secondAttribute="leading" constant="16" id="qxa-ad-hyh"/>
                             <constraint firstItem="rtC-vz-tV9" firstAttribute="width" secondItem="eWN-zJ-hda" secondAttribute="width" id="vtC-Tn-2VY"/>
+                            <constraint firstItem="LQt-ch-8oJ" firstAttribute="top" secondItem="j8N-Jx-VTY" secondAttribute="bottom" constant="16" id="yMj-x6-G2Z"/>
                             <constraint firstItem="F2U-OH-g3C" firstAttribute="leading" secondItem="qiL-x4-5J1" secondAttribute="leading" constant="16" id="zYh-WC-JEZ"/>
                         </constraints>
                     </view>
@@ -409,6 +422,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="addImageButton" destination="LQt-ch-8oJ" id="CF2-uJ-Wty"/>
                         <outlet property="descTF" destination="Qhe-pZ-gTc" id="Gg7-Gw-Giz"/>
                         <outlet property="latTF" destination="dDe-o3-Fcz" id="g4e-Cu-ol4"/>
                         <outlet property="longTF" destination="PkW-oe-BVa" id="r3I-JR-CY5"/>
@@ -454,6 +468,7 @@
         <segue reference="iaJ-Ff-Ltu"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="addImg" width="634" height="424"/>
         <image name="location" catalog="system" width="128" height="121"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">

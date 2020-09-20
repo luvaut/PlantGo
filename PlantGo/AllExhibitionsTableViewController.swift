@@ -111,7 +111,7 @@ class AllExhibitionsTableViewController: UITableViewController, DatabaseListener
                 cell.iconImgView?.image = imgs[exhibition.iconPath!]
 
             }*/
-            downloadImg(view: cell.iconImgView, path: exhibition.iconPath!)
+            loadImg(view: cell.iconImgView, path: exhibition.iconPath!)
             return cell
         }
         let cell = tableView.dequeueReusableCell(withIdentifier: "infoCell", for: indexPath)
@@ -201,13 +201,23 @@ class AllExhibitionsTableViewController: UITableViewController, DatabaseListener
     }
  */
     
-    func downloadImg(view: UIImageView, path: String){
+    func loadImg(view: UIImageView, path: String){
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        let documentsDirectory = paths[0]
+        let imageURL = documentsDirectory.appendingPathComponent(path)
+        if let image = UIImage(contentsOfFile: imageURL.path) {
+            view.image = image
+            return
+        }
         guard let url = URL(string: path) else {
             view.image = UIImage(named: "placeholder.jpg")
             return
         }
         let task = URLSession.shared.dataTask(with: url){data, response, error in
             if let error = error {
+                DispatchQueue.main.async {
+                    view.image = UIImage(named: "placeholder.jpg")
+                }
                 print(error.localizedDescription)
             } else {
                 DispatchQueue.main.async {

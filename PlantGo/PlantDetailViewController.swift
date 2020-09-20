@@ -33,7 +33,10 @@ class PlantDetailViewController: UIViewController {
     
     func loadImage(){
         let path = plant?.imgPath
-        if let url = URL(string: path!) {
+        guard let url = URL(string: path!) else {
+            imgView.image = UIImage(named: "placeholder.jpg")
+            return
+        }
         let task = URLSession.shared.dataTask(with: url){data, response, error in
             if let error = error {
                 print(error.localizedDescription)
@@ -45,9 +48,6 @@ class PlantDetailViewController: UIViewController {
             
         }
         task.resume()
-        } else {
-            imgView.image = UIImage(named: "placeholder.jpg")
-        }
         
     }
 
